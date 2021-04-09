@@ -8,7 +8,7 @@
   },
   "scripts": {
     "create": "npm run build && npm run test",
-    "build": "tsc -p .",
+    "compile": "tsc -p .",
     "install": "sudo npm i -g",
     "refresh": "rm -rf ./node_modules ./package-lock.json && npm install",
     "test": "echo \"Error: no test specified\" && exit 1"

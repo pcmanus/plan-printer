@@ -30,7 +30,7 @@ const argv = args.argv;
 // This has to happen before the import the query planner as the QP_DEBUG variable is checked "statically". That's
 // why we put the rest of our import/code below (slightly ugly but hey!).
 if (argv.debug) {
-  process.env.QP_DEBUG = "true";
+  process.env.APOLLO_QP_DEBUG = "true";
 }
 
 import { buildComposedSchema, buildOperationContext, QueryPlanner, prettyFormatQueryPlan } from '@apollo/query-planner';
